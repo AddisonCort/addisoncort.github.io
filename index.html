@@ -1,0 +1,35 @@
+<body>
+  <div id="card">
+  <div class="front">
+    <img src="images/C.gif"></img>
+  </div>
+  <div class="back">
+    <p class="answer">C</p>
+  </div>
+</div>
+</body>
+<style>
+#card{
+
+}
+.front{
+  background-color: #009900;
+  width:100px;
+  height:100px;
+}
+.back{
+  background-color: #000099;
+  width:100px;
+  height:100px;
+}
+.answer{
+font-size:70px;
+
+}
+</style>
+
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/jquery.flip.js"></script>
+<script>
+$("#card").flip();
+</script>
