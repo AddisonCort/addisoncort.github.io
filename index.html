@@ -1,16 +1,26 @@
 <body>
-  <div id="card">
-  <div class="front">
-    <img src="images/C.gif"></img>
+  <div class="card" id="card1">
+    <div class="front">
+      <img src="images/C.gif"></img>
+    </div>
+    <div class="back">
+      <p class="answer">C</p>
+    </div>
   </div>
-  <div class="back">
-    <p class="answer">C</p>
+  <div class="card" id="card2">
+    <div class="front">
+      <img src="images/D.gif"></img>
+    </div>
+    <div class="back">
+      <p class="answer">D</p>
+    </div>
   </div>
-</div>
 </body>
 <style>
-#card{
+.card{
 
+  width:200px;
+  height:200px;
 }
 .front{
   background-color: #009900;
@@ -31,5 +41,6 @@ font-size:70px;
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/jquery.flip.js"></script>
 <script>
-$("#card").flip();
+$("#card1").flip();
+$("#card2").flip();
 </script>
